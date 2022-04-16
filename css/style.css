@@ -1,0 +1,323 @@
+/* &display=swap */
+
+@import url("nullstyle.css");
+
+body {
+	font-family: "Roboto", sans-serif;
+	letter-spacing: 0.15px;
+	background-color: #f5f5f5;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+[class*=__container] {
+	max-width: 1020px;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 26px 0 312px 0;
+	position: relative;
+	color: #fff;
+}
+
+.ibg img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	z-index: -1;
+}
+
+
+.header__top {
+	margin-bottom: 28px;
+}
+
+.top-header>* {
+	display: inline-block;
+}
+
+.top-header__logo {
+	margin-right: 236px;
+}
+
+.logo {
+	vertical-align: top;
+}
+
+/* .logo__image {} */
+
+.top-header__time {
+	margin-right: 40px;
+}
+
+.top-header__phone {
+	margin-right: 30px;
+}
+
+
+.time {
+	padding: 0 0 0 36px;
+	font-size: 12px;
+	font-weight: 700;
+	position: relative;
+}
+
+.time::before {
+	content: '';
+	background: url('../img/header/access_time.svg') 0 0 no-repeat;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+.phone {
+	padding: 0 0 0 30px;
+	font-size: 12px;
+	font-weight: 500;
+	position: relative;
+}
+
+.phone::before {
+	content: '';
+	background: url('../img/header/phone.svg') 0 0 no-repeat;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+.time__title,
+.phone__title {
+	text-transform: uppercase;
+	line-height: 1.83;
+}
+
+.time__text,
+.phone__text {
+	line-height: 1.56;
+}
+
+.button {
+	display: inline-block;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 2;
+	padding: 8px 33px;
+	text-transform: uppercase;
+	background-color: #F2726F;
+	border-radius: 8px;
+	vertical-align: top;
+}
+
+.header__menu {
+	margin-bottom: 126px;
+}
+
+.menu {
+	color: #000;
+	padding: 10px 40px;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.menu__list {
+	display: inline-block;
+	margin-right: 330px;
+}
+
+.menu__list li:not(:last-child) {
+	margin-right: 37px;
+}
+
+.menu__list li:nth-child(1) .menu__link::after,
+.menu__list li:nth-child(5) .menu__link::after {
+	content: "";
+	position: absolute;
+	background: url('../img/header/expand_more_24px.svg') no-repeat;
+	width: 16px;
+	height: 16px;
+	top: 0;
+	right: -17px;
+}
+
+.menu__list li:nth-child(1),
+.menu__list li:nth-child(5) {
+	margin-right: 54px;
+}
+
+.menu__item {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 2.87;
+}
+
+.menu__link {
+	position: relative;
+}
+
+.menu__search-btn {
+	margin-right: 46px;
+}
+
+/* .menu__cart-btn {} */
+
+.search-btn,
+.cart-btn {
+	position: relative;
+}
+
+.search-btn::before {
+	content: "";
+	background: url("../img/header/search.svg") no-repeat;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.cart-btn::before {
+	content: "";
+	background: url("../img/header/shopping_cart.svg") no-repeat;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.cart-btn::after {
+	content: "2";
+	width: 16px;
+	height: 16px;
+	background-color: #F2726F;
+	border-radius: 50%;
+	position: absolute;
+	top: -6px;
+	left: 16px;
+	color: #fff;
+	font-size: 10px;
+	line-height: 1.6;
+	text-align: center;
+}
+
+.header__title {
+	font-size: 56px;
+	font-weight: 900;
+	max-width: 583px;
+	margin-bottom: 48px;
+}
+
+/* .header__button {} */
+
+.button_shadow-height48 {
+	padding: 12px 33px;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ================================================= */
+
+/* .page {} */
+
+/* .page__who-we-are {} */
+
+.who-we-are {
+	color: #fff;
+	margin: -80px 0 120px 0;
+}
+
+
+.who-we-are__body {
+	position: relative;
+	padding: 100px 87px 0 87px;
+	min-height: 700px;
+	background: #5D62B5;
+	border-radius: 40px;
+}
+
+.who-we-are__body::before {
+	content: '';
+	background: url('../img/who_we_are/Stylize Circles.svg') 0 0 no-repeat;
+	width: 201px;
+	height: 317px;
+	position: absolute;
+	right: -76px;
+	top: -109px;
+}
+
+.who-we-are__body::after {
+	content: '';
+	background: url('../img/who_we_are/Blob 2.svg') no-repeat;
+	width: 613px;
+	height: 471px;
+	position: absolute;
+	bottom: -27px;
+	left: -14px;
+	z-index: 1;
+}
+
+.who-we-are__label {
+	padding: 0 0 0 31px;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 2.5px;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: relative;
+	vertical-align: middle;
+	margin-bottom: 33px;
+}
+
+.who-we-are__label::before {
+	content: "";
+	background: url('../img/who_we_are/Overline Mark.svg') 0 0 no-repeat;
+	width: 17px;
+	height: 16px;
+	position: absolute;
+	top: -2px;
+	left: 0;
+	min-height: 100%;
+}
+
+.who-we-are__title {
+	font-size: 36px;
+	font-weight: 900;
+	line-height: calc(42/36);
+	max-width: 583px;
+	margin-bottom: 36px;
+}
+
+.who-we-are__text {
+	font-size: 16px;
+	line-height: calc(24/16);
+	margin-bottom: 54px;
+}
+
+.who-we-are__picture {
+	display: inline-block;
+	margin: 0 0 -120px 0;
+}
+
+.picture img {
+	position: relative;
+	z-index: 3;
+	max-width: 877px;
+	height: auto;
+	border-radius: 40px;
+}
